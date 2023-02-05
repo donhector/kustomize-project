@@ -4,9 +4,6 @@ kind: Kustomization
 bases:
   - ../../base
 
-resources:
-  - namespace.yaml
-
 namespace: prod
 
 patches:

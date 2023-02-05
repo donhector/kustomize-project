@@ -5,6 +5,7 @@ resources:
   - deployment.yaml
   - persistentVolumeClaim.yaml
   - service.yaml
+  - namespace.yaml
 
 commonAnnotations:
   rendered-by: kustomize
