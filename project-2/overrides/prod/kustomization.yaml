@@ -1,0 +1,6 @@
+bases:
+  - ../../base
+
+namespace: prod
+
+namePrefix: prod-
