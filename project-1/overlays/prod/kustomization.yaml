@@ -7,7 +7,7 @@ bases:
 namespace: prod
 
 patches:
-  - replicas.yaml
+  - path: replicas.yaml
 
 configMapGenerator:
   - name: properties
