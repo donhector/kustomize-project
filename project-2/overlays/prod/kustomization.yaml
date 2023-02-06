@@ -4,3 +4,11 @@ bases:
 namespace: prod
 
 namePrefix: prod-
+
+helmCharts:
+  - name: jenkins
+    repo: https://charts.jenkins.io/
+    version: 4.3.0
+    releaseName: jenkins
+    namespace: prod
+    valuesFile: values-prod.yaml

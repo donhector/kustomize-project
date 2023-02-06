@@ -1,0 +1,17 @@
+# Add your values here
+# See https://octopus.com/blog/jenkins-helm-install-guide
+
+controller:
+  #image: jenkins/jenkins
+  #tag: lts-jdk11
+  #installPlugins: false
+  additionalPlugins:
+    - mailer:448.v5b_97805e3767
+  serviceType: LoadBalancer
+  # jenkinsUrl: http://<your public ip>:8080/
+
+  JCasC:
+    configScripts:
+      configure-jenkins-script: |
+        jenkins:
+          systemMessage: "[PROD] Jenkins configured automatically by Jenkins Configuration as Code plugin\n\n"

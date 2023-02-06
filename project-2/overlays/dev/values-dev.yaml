@@ -1,0 +1,11 @@
+# Add your values here
+# See https://octopus.com/blog/jenkins-helm-install-guide
+
+controller:
+  additionalPlugins:
+    - mailer:448.v5b_97805e3767
+  JCasC:
+    configScripts:
+      configure-jenkins-script: |
+        jenkins:
+          systemMessage: "[DEV] Jenkins configured automatically by Jenkins Configuration as Code plugin\n\n"

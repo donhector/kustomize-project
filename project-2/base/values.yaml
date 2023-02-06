@@ -1,0 +1,4 @@
+# Add your values here
+controller:
+  additionalPlugins:
+    - mailer:448.v5b_97805e3767

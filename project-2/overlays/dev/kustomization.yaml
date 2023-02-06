@@ -4,3 +4,11 @@ bases:
 namespace: dev
 
 namePrefix: dev-
+
+helmCharts:
+  - name: jenkins
+    repo: https://charts.jenkins.io/
+    version: 4.3.0
+    releaseName: jenkins
+    namespace: dev
+    valuesFile: values-dev.yaml
